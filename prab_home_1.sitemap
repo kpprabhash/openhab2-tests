@@ -1,0 +1,139 @@
+sitemap prab_home_1 label="Prab Home 1" {
+    Frame label="Ground Floor" icon="groundfloor" {
+        Group item=GF_Kitchen
+        Group item=GF_KidsRoom
+        Group item=GF_StorageRoom
+        Group item=GF_Outside
+        Group item=GF_Backyard
+        Group item=GF_Bathroom
+        Group item=GF_Wardrobe
+        Group item=GF_LivingDining
+        Group item=GF_Office
+        Group item=GF_FrontYard
+        Group item=GF_LivingRoom
+        Group item=GF_MasterBedroom
+        Group item=GF_LaundryRoom
+    }
+
+    Frame label="First Floor" icon="firstfloor" {
+        Group item=FF_HomeCinema
+        Group item=FF_Bathroom
+        Group item=FF_Balcony
+        Group item=FF_Terrace
+        Group item=FF_Corridor
+    }
+
+    Frame {
+        Text label="Power Outlet" icon="poweroutlet" {
+            Default item=GF_Kitchen_Power label="Kitchen"
+            Default item=GF_Outside_Power label="Outside"
+            Default item=GF_Wardrobe_Power label="Wardrobe"
+            Default item=GF_Office_Power label="Office"
+            Default item=GF_LivingRoom_Power label="Living Room"
+            Default item=GF_MasterBedroom_Power label="Master Bedroom"
+            Default item=GF_LaundryRoom_Power label="Laundry Room"
+            Default item=FF_HomeCinema_Power label="Home Cinema"
+            Default item=FF_Balcony_Power label="Balcony"
+            Default item=FF_Terrace_Power label="Terrace"
+        }
+
+        Text label="Roller Shutter" icon="rollershutter" {
+            Default item=FF_HomeCinema_Shutter label="Home Cinema"
+        }
+
+        Text label="Fan" icon="fan_ceiling" {
+            Default item=GF_Bathroom_Fan label="Bathroom"
+            Default item=GF_LivingDining_Fan label="Living & Dining Room"
+            Default item=GF_Office_Fan label="Office"
+            Default item=GF_LivingRoom_Fan label="Living Room"
+            Default item=GF_MasterBedroom_Fan label="Master Bedroom"
+            Default item=FF_HomeCinema_Fan label="Home Cinema"
+            Default item=FF_Bathroom_Fan label="Bathroom"
+        }
+
+        Text label="Air Conditioner" icon="snow" {
+            Default item=GF_Office_AirCon label="Office"
+            Default item=GF_MasterBedroom_AirCon label="Master Bedroom"
+            Default item=FF_HomeCinema_AirCon label="Home Cinema"
+        }
+
+        Text label="Temperature" icon="temperature" {
+            Default item=GF_Kitchen_Temperature label="Kitchen"
+            Default item=GF_KidsRoom_Temperature label="Kids Room"
+            Default item=GF_Outside_Temperature label="Outside"
+            Default item=GF_Backyard_Temperature label="Backyard"
+            Default item=GF_Bathroom_Temperature label="Bathroom"
+            Default item=GF_Wardrobe_Temperature label="Wardrobe"
+            Default item=GF_LivingDining_Temperature label="Living & Dining Room"
+            Default item=GF_Office_Temperature label="Office"
+            Default item=GF_FrontYard_Temperature label="Front Yard"
+            Default item=GF_LivingRoom_Temperature label="Living Room"
+            Default item=GF_MasterBedroom_Temperature label="Master Bedroom"
+            Default item=FF_HomeCinema_Temperature label="Home Cinema"
+            Default item=FF_Balcony_Temperature label="Balcony"
+            Default item=FF_Terrace_Temperature label="Terrace"
+            Default item=FF_Corridor_Temperature label="Corridor"
+        }
+
+        Text label="Blind" icon="blinds" {
+            Default item=FF_HomeCinema_Blind label="Home Cinema"
+        }
+
+        Text label="Motion Sensor" icon="motion" {
+            Default item=GF_Kitchen_Motion label="Kitchen"
+            Default item=GF_KidsRoom_Motion label="Kids Room"
+            Default item=GF_Outside_Motion label="Outside"
+            Default item=GF_Backyard_Motion label="Backyard"
+            Default item=GF_Bathroom_Motion label="Bathroom"
+            Default item=GF_Wardrobe_Motion label="Wardrobe"
+            Default item=GF_LivingDining_Motion label="Living & Dining Room"
+            Default item=GF_Office_Motion label="Office"
+            Default item=GF_FrontYard_Motion label="Front Yard"
+            Default item=GF_LivingRoom_Motion label="Living Room"
+            Default item=GF_MasterBedroom_Motion label="Master Bedroom"
+            Default item=FF_HomeCinema_Motion label="Home Cinema"
+            Default item=FF_Bathroom_Motion label="Bathroom"
+            Default item=FF_Balcony_Motion label="Balcony"
+            Default item=FF_Terrace_Motion label="Terrace"
+            Default item=FF_Corridor_Motion label="Corridor"
+        }
+
+        Text label="Light" icon="light" {
+            Default item=GF_Kitchen_Light label="Kitchen"
+            Default item=GF_KidsRoom_Light label="Kids Room"
+            Default item=GF_StorageRoom_Light label="Storage Room"
+            Default item=GF_Outside_Light label="Outside"
+            Default item=GF_Backyard_Light label="Backyard"
+            Default item=GF_Bathroom_Light label="Bathroom"
+            Default item=GF_Wardrobe_Light label="Wardrobe"
+            Default item=GF_LivingDining_Light label="Living & Dining Room"
+            Default item=GF_Office_Light label="Office"
+            Default item=GF_FrontYard_Light label="Front Yard"
+            Default item=GF_LivingRoom_Light label="Living Room"
+            Default item=GF_MasterBedroom_Light label="Master Bedroom"
+            Default item=FF_HomeCinema_Light label="Home Cinema"
+            Default item=FF_Bathroom_Light label="Bathroom"
+            Default item=FF_Balcony_Light label="Balcony"
+            Default item=FF_Terrace_Light label="Terrace"
+            Default item=FF_Corridor_Light label="Corridor"
+        }
+
+        Text label="Door" icon="door" {
+            Default item=GF_KidsRoom_Door label="Kids Room"
+            Default item=GF_Bathroom_Door label="Bathroom"
+            Default item=GF_Wardrobe_Door label="Wardrobe"
+            Default item=GF_Office_Door label="Office"
+            Default item=GF_LivingRoom_Door label="Living Room"
+            Default item=GF_MasterBedroom_Door label="Master Bedroom"
+            Default item=FF_HomeCinema_Door label="Home Cinema"
+            Default item=FF_Bathroom_Door label="Bathroom"
+            Default item=FF_Terrace_Door label="Terrace"
+        }
+
+        Text label="Humidity" icon="humidity" {
+            Default item=GF_Outside_Humidity label="Outside"
+            Default item=GF_Backyard_Humidity label="Backyard"
+            Default item=GF_Bathroom_Humidity label="Bathroom"
+        }
+    }
+}
