@@ -21,6 +21,8 @@ sitemap prab_home_1 label="Prab Home 1" {
         Group item=FF_Balcony
         Group item=FF_Terrace
         Group item=FF_Corridor
+        Group item=FF_Bedroom1
+        Group item=FF_Bedroom2
     }
 
     Frame {
