@@ -1,0 +1,5 @@
+sitemap sitemap1 label="My test sitemap"{
+	Frame label= "Kitchen"{
+		Text item=mqtt_kitchen_gas icon="gas"
+	}
+}
