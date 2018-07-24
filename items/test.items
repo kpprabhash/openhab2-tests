@@ -1,0 +1,3 @@
+Switch MQTT_Test "Testing..." {mqtt="<[mosquitto:testing/mqtt/topic:state:default], >[mosquitto:testing/mqtt/back-topic:command:*:default]"}
+Switch MQTT_Test1 "Testing1..." {mqtt="<[mosquitto:testing/mqtt/topic:state:default], >[mosquitto:testing/mqtt/back-topic:command:*:default]"}
+Switch MQTT_Test2 "Testing2..." {mqtt="<[mosquitto:testing/mqtt/topic:state:default], >[mosquitto:testing/mqtt/back-topic:command:*:default]"}

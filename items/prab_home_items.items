@@ -1,0 +1,117 @@
+Group           Home                           "Prab Home 1"            <house>
+
+Group           GF                             "Ground Floor"           <groundfloor>      (Home)
+Group           FF                             "First Floor"            <firstfloor>       (Home)
+
+Group           GF_Kitchen                     "Kitchen"                <kitchen>          (Home, GF)
+Group           GF_KidsRoom                    "Kids Room"              <girl_3>           (Home, GF)
+Group           GF_StorageRoom                 "Storage Room"           <suitcase>         (Home, GF)
+Group           GF_Outside                     "Outside"                <garden>           (Home, GF)
+Group           GF_Backyard                    "Backyard"               <lawnmower>        (Home, GF)
+Group           GF_Bathroom                    "Bathroom"               <bath>             (Home, GF)
+Group           GF_Wardrobe                    "Wardrobe"               <wardrobe>         (Home, GF)
+Group           GF_LivingDining                "Living & Dining Room"   <sofa>             (Home, GF)
+Group           GF_Office                      "Office"                 <office>           (Home, GF)
+Group           GF_FrontYard                   "Front Yard"             <lawnmower>        (Home, GF)
+Group           GF_LivingRoom                  "Living Room"            <sofa>             (Home, GF)
+Group           GF_MasterBedroom               "Master Bedroom"         <bedroom_red>      (Home, GF)
+Group           GF_LaundryRoom                 "Laundry Room"           <washingmachine>   (Home, GF)
+Group           FF_HomeCinema                  "Home Cinema"            <screen>           (Home, FF)
+Group           FF_Bathroom                    "Bathroom"               <bath>             (Home, FF)
+Group           FF_Balcony                     "Balcony"                                   (Home, FF)
+Group           FF_Terrace                     "Terrace"                <terrace>          (Home, FF)
+Group           FF_Corridor                    "Corridor"               <corridor>         (Home, FF)
+
+Switch          GF_Kitchen_Light               "Light"                  <light>            (GF_Kitchen, gLight)               ["Lighting"]     {channel=""}
+Switch          GF_Kitchen_Motion              "Motion Sensor"          <motion>           (GF_Kitchen, gMotion)                               {channel=""}
+Number          GF_Kitchen_Temperature         "Temperature"            <temperature>      (GF_Kitchen, gTemperature)                          {channel=""}
+Switch          GF_Kitchen_Power               "Power Outlet"           <poweroutlet>      (GF_Kitchen, gPower)               ["Switchable"]   {channel=""}
+Switch          GF_KidsRoom_Light              "Light"                  <light>            (GF_KidsRoom, gLight)              ["Lighting"]     {channel=""}
+Contact         GF_KidsRoom_Door               "Door"                   <door>             (GF_KidsRoom, gDoor)                                {channel=""}
+Switch          GF_KidsRoom_Motion             "Motion Sensor"          <motion>           (GF_KidsRoom, gMotion)                              {channel=""}
+Number          GF_KidsRoom_Temperature        "Temperature"            <temperature>      (GF_KidsRoom, gTemperature)                         {channel=""}
+Switch          GF_StorageRoom_Light           "Light"                  <light>            (GF_StorageRoom, gLight)           ["Lighting"]     {channel=""}
+Switch          GF_Outside_Motion              "Motion Sensor"          <motion>           (GF_Outside, gMotion)                               {channel=""}
+Switch          GF_Outside_Light               "Light"                  <light>            (GF_Outside, gLight)               ["Lighting"]     {channel=""}
+Switch          GF_Outside_Power               "Power Outlet"           <poweroutlet>      (GF_Outside, gPower)               ["Switchable"]   {channel=""}
+Number          GF_Outside_Temperature         "Temperature"            <temperature>      (GF_Outside, gTemperature)                          {channel=""}
+Number          GF_Outside_Humidity            "Humidity"               <humidity>         (GF_Outside, gHumidity)                             {channel=""}
+Switch          GF_Backyard_Light              "Light"                  <light>            (GF_Backyard, gLight)              ["Lighting"]     {channel=""}
+Switch          GF_Backyard_Motion             "Motion Sensor"          <motion>           (GF_Backyard, gMotion)                              {channel=""}
+Number          GF_Backyard_Temperature        "Temperature"            <temperature>      (GF_Backyard, gTemperature)                         {channel=""}
+Number          GF_Backyard_Humidity           "Humidity"               <humidity>         (GF_Backyard, gHumidity)                            {channel=""}
+Switch          GF_Bathroom_Light              "Light"                  <light>            (GF_Bathroom, gLight)              ["Lighting"]     {channel=""}
+Contact         GF_Bathroom_Door               "Door"                   <door>             (GF_Bathroom, gDoor)                                {channel=""}
+Switch          GF_Bathroom_Motion             "Motion Sensor"          <motion>           (GF_Bathroom, gMotion)                              {channel=""}
+Switch          GF_Bathroom_Fan                "Fan"                    <fan_ceiling>      (GF_Bathroom, gFan)                ["Switchable"]   {channel=""}
+Number          GF_Bathroom_Temperature        "Temperature"            <temperature>      (GF_Bathroom, gTemperature)                         {channel=""}
+Number          GF_Bathroom_Humidity           "Humidity"               <humidity>         (GF_Bathroom, gHumidity)                            {channel=""}
+Switch          GF_Wardrobe_Light              "Light"                  <light>            (GF_Wardrobe, gLight)              ["Lighting"]     {channel=""}
+Contact         GF_Wardrobe_Door               "Door"                   <door>             (GF_Wardrobe, gDoor)                                {channel=""}
+Switch          GF_Wardrobe_Motion             "Motion Sensor"          <motion>           (GF_Wardrobe, gMotion)                              {channel=""}
+Switch          GF_Wardrobe_Power              "Power Outlet"           <poweroutlet>      (GF_Wardrobe, gPower)              ["Switchable"]   {channel=""}
+Number          GF_Wardrobe_Temperature        "Temperature"            <temperature>      (GF_Wardrobe, gTemperature)                         {channel=""}
+Switch          GF_LivingDining_Light          "Light"                  <light>            (GF_LivingDining, gLight)          ["Lighting"]     {channel=""}
+Switch          GF_LivingDining_Motion         "Motion Sensor"          <motion>           (GF_LivingDining, gMotion)                          {channel=""}
+Switch          GF_LivingDining_Fan            "Fan"                    <fan_ceiling>      (GF_LivingDining, gFan)            ["Switchable"]   {channel=""}
+Number          GF_LivingDining_Temperature    "Temperature"            <temperature>      (GF_LivingDining, gTemperature)                     {channel=""}
+Switch          GF_Office_Light                "Light"                  <light>            (GF_Office, gLight)                ["Lighting"]     {channel=""}
+Contact         GF_Office_Door                 "Door"                   <door>             (GF_Office, gDoor)                                  {channel=""}
+Switch          GF_Office_Motion               "Motion Sensor"          <motion>           (GF_Office, gMotion)                                {channel=""}
+Switch          GF_Office_Power                "Power Outlet"           <poweroutlet>      (GF_Office, gPower)                ["Switchable"]   {channel=""}
+Switch          GF_Office_Fan                  "Fan"                    <fan_ceiling>      (GF_Office, gFan)                  ["Switchable"]   {channel=""}
+Switch          GF_Office_AirCon               "Air Conditioner"        <snow>             (GF_Office, gAirCon)               ["Switchable"]   {channel=""}
+Number          GF_Office_Temperature          "Temperature"            <temperature>      (GF_Office, gTemperature)                           {channel=""}
+Switch          GF_FrontYard_Light             "Light"                  <light>            (GF_FrontYard, gLight)             ["Lighting"]     {channel=""}
+Switch          GF_FrontYard_Motion            "Motion Sensor"          <motion>           (GF_FrontYard, gMotion)                             {channel=""}
+Number          GF_FrontYard_Temperature       "Temperature"            <temperature>      (GF_FrontYard, gTemperature)                        {channel=""}
+Switch          GF_LivingRoom_Light            "Light"                  <light>            (GF_LivingRoom, gLight)            ["Lighting"]     {channel=""}
+Contact         GF_LivingRoom_Door             "Door"                   <door>             (GF_LivingRoom, gDoor)                              {channel=""}
+Switch          GF_LivingRoom_Motion           "Motion Sensor"          <motion>           (GF_LivingRoom, gMotion)                            {channel=""}
+Switch          GF_LivingRoom_Power            "Power Outlet"           <poweroutlet>      (GF_LivingRoom, gPower)            ["Switchable"]   {channel=""}
+Switch          GF_LivingRoom_Fan              "Fan"                    <fan_ceiling>      (GF_LivingRoom, gFan)              ["Switchable"]   {channel=""}
+Number          GF_LivingRoom_Temperature      "Temperature"            <temperature>      (GF_LivingRoom, gTemperature)                       {channel=""}
+Switch          GF_MasterBedroom_Light         "Light"                  <light>            (GF_MasterBedroom, gLight)         ["Lighting"]     {channel=""}
+Contact         GF_MasterBedroom_Door          "Door"                   <door>             (GF_MasterBedroom, gDoor)                           {channel=""}
+Switch          GF_MasterBedroom_Motion        "Motion Sensor"          <motion>           (GF_MasterBedroom, gMotion)                         {channel=""}
+Switch          GF_MasterBedroom_Power         "Power Outlet"           <poweroutlet>      (GF_MasterBedroom, gPower)         ["Switchable"]   {channel=""}
+Switch          GF_MasterBedroom_Fan           "Fan"                    <fan_ceiling>      (GF_MasterBedroom, gFan)           ["Switchable"]   {channel=""}
+Switch          GF_MasterBedroom_AirCon        "Air Conditioner"        <snow>             (GF_MasterBedroom, gAirCon)        ["Switchable"]   {channel=""}
+Number          GF_MasterBedroom_Temperature   "Temperature"            <temperature>      (GF_MasterBedroom, gTemperature)                    {channel=""}
+Switch          GF_LaundryRoom_Power           "Power Outlet"           <poweroutlet>      (GF_LaundryRoom, gPower)           ["Switchable"]   {channel=""}
+Switch          FF_HomeCinema_Power            "Power Outlet"           <poweroutlet>      (FF_HomeCinema, gPower)            ["Switchable"]   {channel=""}
+Rollershutter   FF_HomeCinema_Shutter          "Roller Shutter"         <rollershutter>    (FF_HomeCinema, gShutter)                           {channel=""}
+Switch          FF_HomeCinema_Fan              "Fan"                    <fan_ceiling>      (FF_HomeCinema, gFan)              ["Switchable"]   {channel=""}
+Switch          FF_HomeCinema_AirCon           "Air Conditioner"        <snow>             (FF_HomeCinema, gAirCon)           ["Switchable"]   {channel=""}
+Number          FF_HomeCinema_Temperature      "Temperature"            <temperature>      (FF_HomeCinema, gTemperature)                       {channel=""}
+Dimmer          FF_HomeCinema_Blind            "Blind"                  <blinds>           (FF_HomeCinema, gBlind)            ["Switchable"]   {channel=""}
+Switch          FF_HomeCinema_Motion           "Motion Sensor"          <motion>           (FF_HomeCinema, gMotion)                            {channel=""}
+Switch          FF_HomeCinema_Light            "Light"                  <light>            (FF_HomeCinema, gLight)            ["Lighting"]     {channel=""}
+Contact         FF_HomeCinema_Door             "Door"                   <door>             (FF_HomeCinema, gDoor)                              {channel=""}
+Switch          FF_Bathroom_Light              "Light"                  <light>            (FF_Bathroom, gLight)              ["Lighting"]     {channel=""}
+Contact         FF_Bathroom_Door               "Door"                   <door>             (FF_Bathroom, gDoor)                                {channel=""}
+Switch          FF_Bathroom_Motion             "Motion Sensor"          <motion>           (FF_Bathroom, gMotion)                              {channel=""}
+Switch          FF_Bathroom_Fan                "Fan"                    <fan_ceiling>      (FF_Bathroom, gFan)                ["Switchable"]   {channel=""}
+Switch          FF_Balcony_Light               "Light"                  <light>            (FF_Balcony, gLight)               ["Lighting"]     {channel=""}
+Switch          FF_Balcony_Motion              "Motion Sensor"          <motion>           (FF_Balcony, gMotion)                               {channel=""}
+Switch          FF_Balcony_Power               "Power Outlet"           <poweroutlet>      (FF_Balcony, gPower)               ["Switchable"]   {channel=""}
+Number          FF_Balcony_Temperature         "Temperature"            <temperature>      (FF_Balcony, gTemperature)                          {channel=""}
+Switch          FF_Terrace_Light               "Light"                  <light>            (FF_Terrace, gLight)               ["Lighting"]     {channel=""}
+Contact         FF_Terrace_Door                "Door"                   <door>             (FF_Terrace, gDoor)                                 {channel=""}
+Switch          FF_Terrace_Motion              "Motion Sensor"          <motion>           (FF_Terrace, gMotion)                               {channel=""}
+Switch          FF_Terrace_Power               "Power Outlet"           <poweroutlet>      (FF_Terrace, gPower)               ["Switchable"]   {channel=""}
+Number          FF_Terrace_Temperature         "Temperature"            <temperature>      (FF_Terrace, gTemperature)                          {channel=""}
+Switch          FF_Corridor_Light              "Light"                  <light>            (FF_Corridor, gLight)              ["Lighting"]     {channel=""}
+Switch          FF_Corridor_Motion             "Motion Sensor"          <motion>           (FF_Corridor, gMotion)                              {channel=""}
+Number          FF_Corridor_Temperature        "Temperature"            <temperature>      (FF_Corridor, gTemperature)                         {channel=""}
+
+Group:Switch:OR(ON, OFF)           gPower         "Power Outlet"      <poweroutlet>     (Home)
+Group:Rollershutter:OR(UP, DOWN)   gShutter       "Roller Shutter"    <rollershutter>   (Home)
+Group:Switch:OR(ON, OFF)           gFan           "Fan"               <fan_ceiling>     (Home)
+Group:Switch:OR(ON, OFF)           gAirCon        "Air Conditioner"   <snow>            (Home)
+Group:Number:AVG                   gTemperature   "Temperature"       <temperature>     (Home)
+Group:Dimmer                       gBlind         "Blind"             <blinds>          (Home)
+Group:Switch:OR(ON, OFF)           gMotion        "Motion Sensor"     <motion>          (Home)
+Group:Switch:OR(ON, OFF)           gLight         "Light"             <light>           (Home)
+Group:Contact:OR(OPEN, CLOSED)     gDoor          "Door"              <door>            (Home)
+Group:Number:AVG                   gHumidity      "Humidity"          <humidity>        (Home)

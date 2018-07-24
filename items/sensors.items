@@ -1,0 +1,1 @@
+Number mqtt_kitchen_gas "Gas Level [%.1f]" {mqtt="<[mosquitto:Home/Floor1/Kitchen/Gas_Sensor:state:default]"}
