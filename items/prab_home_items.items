@@ -22,7 +22,7 @@ Group           FF_Balcony                     "Balcony"                        
 Group           FF_Terrace                     "Terrace"                <terrace>          (Home, FF)
 Group           FF_Corridor                    "Corridor"               <corridor>         (Home, FF)
 
-Switch          GF_Kitchen_Light               "Light"                  <light>            (GF_Kitchen, gLight)               ["Lighting"]     {channel=""}
+Switch          GF_Kitchen_Light               "Light"                  <light>            (GF_Kitchen, gLight)               ["Lighting"]     {mqtt="<[mosquitto:GF/Kitchen/Light:state:default], >[mosquitto:GF/Kitchen/Light:command:*:default]"}
 Switch          GF_Kitchen_Motion              "Motion Sensor"          <motion>           (GF_Kitchen, gMotion)                               {channel=""}
 Number          GF_Kitchen_Temperature         "Temperature"            <temperature>      (GF_Kitchen, gTemperature)                          {channel=""}
 Switch          GF_Kitchen_Power               "Power Outlet"           <poweroutlet>      (GF_Kitchen, gPower)               ["Switchable"]   {channel=""}
@@ -54,7 +54,7 @@ Number          GF_Wardrobe_Temperature        "Temperature"            <tempera
 Switch          GF_LivingDining_Light          "Light"                  <light>            (GF_LivingDining, gLight)          ["Lighting"]     {channel=""}
 Switch          GF_LivingDining_Motion         "Motion Sensor"          <motion>           (GF_LivingDining, gMotion)                          {channel=""}
 Switch          GF_LivingDining_Fan            "Fan"                    <fan_ceiling>      (GF_LivingDining, gFan)            ["Switchable"]   {channel=""}
-Number          GF_LivingDining_Temperature    "Temperature"            <temperature>      (GF_LivingDining, gTemperature)                     {channel=""}
+Number          GF_LivingDining_Temperature    "Temperature [%.1f]"     <temperature>      (GF_LivingDining, gTemperature)                     {mqtt="<[mosquitto:GF/Living/Temp:state:default], >[mosquitto:GF/Living/Temp:command:*:default]"}
 Switch          GF_Office_Light                "Light"                  <light>            (GF_Office, gLight)                ["Lighting"]     {channel=""}
 Contact         GF_Office_Door                 "Door"                   <door>             (GF_Office, gDoor)                                  {channel=""}
 Switch          GF_Office_Motion               "Motion Sensor"          <motion>           (GF_Office, gMotion)                                {channel=""}
