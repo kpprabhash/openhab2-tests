@@ -52,6 +52,8 @@ sitemap prab_home_1 label="Prab Home 1" {
             Default item=GF_MasterBedroom_Fan label="Master Bedroom"
             Default item=FF_HomeCinema_Fan label="Home Cinema"
             Default item=FF_Bathroom_Fan label="Bathroom"
+            Default item=FF_Bedroom1_Fan label="Bedroom1"
+            Default item=FF_Bedroom2_Fan label="Bedroom2"
         }
 
         Text label="Air Conditioner" icon="snow" {
@@ -96,6 +98,8 @@ sitemap prab_home_1 label="Prab Home 1" {
             Default item=GF_MasterBedroom_Motion label="Master Bedroom"
             Default item=FF_HomeCinema_Motion label="Home Cinema"
             Default item=FF_Bathroom_Motion label="Bathroom"
+            Default item=FF_Bedroom1_Motion label="Bedroom1"
+            Default item=FF_Bedroom2_Motion label="Bedroom2"
             Default item=FF_Balcony_Motion label="Balcony"
             Default item=FF_Terrace_Motion label="Terrace"
             Default item=FF_Corridor_Motion label="Corridor"
@@ -116,6 +120,8 @@ sitemap prab_home_1 label="Prab Home 1" {
             Default item=GF_MasterBedroom_Light label="Master Bedroom"
             Default item=FF_HomeCinema_Light label="Home Cinema"
             Default item=FF_Bathroom_Light label="Bathroom"
+            Default item=FF_Bedroom1_Light label="Bedroom1"
+            Default item=FF_Bedroom2_Light label="Bedroom2"
             Default item=FF_Balcony_Light label="Balcony"
             Default item=FF_Terrace_Light label="Terrace"
             Default item=FF_Corridor_Light label="Corridor"
@@ -130,6 +136,8 @@ sitemap prab_home_1 label="Prab Home 1" {
             Default item=GF_MasterBedroom_Door label="Master Bedroom"
             Default item=FF_HomeCinema_Door label="Home Cinema"
             Default item=FF_Bathroom_Door label="Bathroom"
+            Default item=FF_Bedroom1_Door label="Bedroom1"
+            Default item=FF_Bedroom2_Door label="Bedroom2"
             Default item=FF_Terrace_Door label="Terrace"
         }
 
