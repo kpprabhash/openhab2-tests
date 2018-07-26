@@ -29,7 +29,7 @@ Switch          GF_Kitchen_Motion              "Motion Sensor"          <motion>
 Number          GF_Kitchen_Temperature         "Temperature"            <temperature>      (GF_Kitchen, gTemperature)                          
 Switch          GF_Kitchen_Power               "Power Outlet"           <poweroutlet>      (GF_Kitchen, gPower)               ["Switchable"]   
 
-Switch          GF_KidsRoom_Light              "Light"                  <light>            (GF_KidsRoom, gLight)              ["Lighting"]     
+Switch          GF_KidsRoom_Light              "Light"                  <light>            (GF_KidsRoom, gLight)              ["Lighting"]     {mqtt="<[mosquitto:GF/KidsRoom/Light:state:default], >[mosquitto:GF/KidsRoom/Light:command:*:default]"}
 Contact         GF_KidsRoom_Door               "Door"                   <door>             (GF_KidsRoom, gDoor)                                
 Switch          GF_KidsRoom_Motion             "Motion Sensor"          <motion>           (GF_KidsRoom, gMotion)                              
 Number          GF_KidsRoom_Temperature        "Temperature"            <temperature>      (GF_KidsRoom, gTemperature)                         
