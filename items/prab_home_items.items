@@ -142,3 +142,5 @@ Group:Switch:OR(ON, OFF)           gMotion        "Motion Sensor"     <motion>  
 Group:Switch:OR(ON, OFF)           gLight         "Light"             <light>           (Home)
 Group:Contact:OR(OPEN, CLOSED)     gDoor          "Door"              <door>            (Home)
 Group:Number:AVG                   gHumidity      "Humidity"          <humidity>        (Home)
+
+String VoiceCommand "Voice Command"

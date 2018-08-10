@@ -1,0 +1,24 @@
+
+rule "Voice Control"
+when
+    Item VoiceCommand received command
+then 
+    val txt = VoiceCommand.state.toString.toLowerCase
+    logInfo("Voice.Rec","VoiceCommand received "+txt)
+    if(txt.contains("turn on")){
+        GF_Kitchen_Light.sendCommand(ON)
+}
+else if (txt.contains("turn off")) {
+            GF_Kitchen_Light.sendCommand(OFF)
+        }
+end
+
+
+rule "Light Control Test"
+when
+    Item GF_Kitchen_Light received command
+then 
+    logInfo("LightRule","Logging Light event")
+    GF_KidsRoom_Light.sendCommand(ON)
+
+end
