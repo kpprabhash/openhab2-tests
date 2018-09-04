@@ -29,6 +29,12 @@ Switch          GF_Kitchen_Motion              "Kitchen Motion Sensor"  <motion>
 Number          GF_Kitchen_Temperature         "Kitchen Temperature"    <temperature>      (GF_Kitchen, gTemperature)                          
 Switch          GF_Kitchen_Power               "Kitchen Power"          <poweroutlet>      (GF_Kitchen, gPower)               ["Switchable"]   
 
+Switch          GF_RED_LED                      "Red Bulb"           (GF_Kitchen, gLight)               ["Lighting"]     {mqtt="<[mosquitto:GF/LED/RED:state:default], >[mosquitto:GF/LED/RED:command:*:default]"}
+Switch          GF_YELLOW_LED                   "Yellow Bulb"        (GF_Kitchen, gLight)               ["Lighting"]     {mqtt="<[mosquitto:GF/LED/YELLOW:state:default], >[mosquitto:GF/LED/YELLOW:command:*:default]"}
+Switch          GF_GREEN_LED                    "Green Bulb"         (GF_Kitchen, gLight)               ["Lighting"]     {mqtt="<[mosquitto:GF/LED/GREEN:state:default], >[mosquitto:GF/LED/GREEN:command:*:default]"}
+
+
+
 Switch          GF_KidsRoom_Light              "Kids Room Light"                  <light>            (GF_KidsRoom, gLight)              ["Lighting"]     {mqtt="<[mosquitto:GF/KidsRoom/Light:state:default], >[mosquitto:GF/KidsRoom/Light:command:*:default]"}
 Contact         GF_KidsRoom_Door               "Kids Room Door"                   <door>             (GF_KidsRoom, gDoor)                                
 Switch          GF_KidsRoom_Motion             "Kids Room Motion Sensor"          <motion>           (GF_KidsRoom, gMotion)                              
@@ -47,7 +53,7 @@ Switch          GF_Backyard_Motion             "Backyard Motion Sensor"         
 Number          GF_Backyard_Temperature        "Backyard Temperature"            <temperature>      (GF_Backyard, gTemperature)                         
 Number          GF_Backyard_Humidity           "Backyard Humidity"               <humidity>         (GF_Backyard, gHumidity)                            
 
-Switch          GF_Bathroom_Light              "Bathroom Light"                  <light>            (GF_Bathroom, gLight)              ["Lighting"]     
+Switch          GF_Bathroom_Light              "Bathroom Light"                  <light>            (GF_Bathroom, gLight)              ["Lighting"]     {mqtt="<[mosquitto:GF/Bathroom/Light:state:default], >[mosquitto:GF/Bathroom/Light:command:*:default]"}
 Contact         GF_Bathroom_Door               "Bathroom Door"                   <door>             (GF_Bathroom, gDoor)                                
 Switch          GF_Bathroom_Motion             "Bathroom Motion Sensor"          <motion>           (GF_Bathroom, gMotion)                              
 Switch          GF_Bathroom_Fan                "Bathroom Fan"                    <fan_ceiling>      (GF_Bathroom, gFan)                ["Switchable"]   
@@ -84,7 +90,7 @@ Switch          GF_LivingRoom_Power            "Drawing room Power Outlet"      
 Switch          GF_LivingRoom_Fan              "Drawing room Fan"                    <fan_ceiling>      (GF_LivingRoom, gFan)              ["Switchable"]   
 Number          GF_LivingRoom_Temperature      "Drawing room Temperature"            <temperature>      (GF_LivingRoom, gTemperature)                       
 
-Switch          GF_MasterBedroom_Light         "Bedroom Light"                  <light>            (GF_MasterBedroom, gLight)         ["Lighting"]     
+Switch          GF_MasterBedroom_Light         "Bedroom Light"                  <light>            (GF_MasterBedroom, gLight)         ["Lighting"]      {mqtt="<[mosquitto:GF/Bedroom/Light:state:default], >[mosquitto:GF/Bedroom/Light:command:*:default]"}
 Contact         GF_MasterBedroom_Door          "Bedroom Door"                   <door>             (GF_MasterBedroom, gDoor)                           
 Switch          GF_MasterBedroom_Motion        "Bedroom Motion Sensor"          <motion>           (GF_MasterBedroom, gMotion)                         
 Switch          GF_MasterBedroom_Power         "Bedroom Power Outlet"           <poweroutlet>      (GF_MasterBedroom, gPower)         ["Switchable"]   
