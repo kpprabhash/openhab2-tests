@@ -26,8 +26,11 @@ Group           FF_Corridor                    "Corridor"               <corrido
 
 Switch          GF_Kitchen_Light               "Kitchen Light"          <light>            (GF_Kitchen, gLight)               ["Lighting"]     {mqtt="<[mosquitto:GF/Kitchen/Light:state:default], >[mosquitto:GF/Kitchen/Light:command:*:default]"}
 Switch          GF_Kitchen_Motion              "Kitchen Motion Sensor"  <motion>           (GF_Kitchen, gMotion)                               
-Number          GF_Kitchen_Temperature         "Kitchen Temperature"    <temperature>      (GF_Kitchen, gTemperature)                          
+Number          GF_Kitchen_Temperature         "Kitchen Current Temperature"    <temperature>      (GF_Kitchen, gTemperature)         ["CurrentTemperature"]     {mqtt="<[mosquitto:GF/Kitchen/Temp:state:default], >[mosquitto:GF/Kitchen/Temp:command:*:default]"}            
+Number          GF_Kitchen_Temperature_set     "Kitchen Target Temperature"    <temperature>      (GF_Kitchen, gTemperature)         ["TargetTemperature"]     {mqtt="<[mosquitto:GF/Kitchen/Temp:state:default], >[mosquitto:GF/Kitchen/Temp:command:*:default]"}            
 Switch          GF_Kitchen_Power               "Kitchen Power"          <poweroutlet>      (GF_Kitchen, gPower)               ["Switchable"]   
+
+
 
 Switch          GF_RED_LED                      "Red Bulb"           (GF_Kitchen, gLight)               ["Lighting"]     {mqtt="<[mosquitto:GF/LED/RED:state:default], >[mosquitto:GF/LED/RED:command:*:default]"}
 Switch          GF_YELLOW_LED                   "Yellow Bulb"        (GF_Kitchen, gLight)               ["Lighting"]     {mqtt="<[mosquitto:GF/LED/YELLOW:state:default], >[mosquitto:GF/LED/YELLOW:command:*:default]"}
@@ -57,7 +60,7 @@ Switch          GF_Bathroom_Light              "Bathroom Light"                 
 Contact         GF_Bathroom_Door               "Bathroom Door"                   <door>             (GF_Bathroom, gDoor)                                
 Switch          GF_Bathroom_Motion             "Bathroom Motion Sensor"          <motion>           (GF_Bathroom, gMotion)                              
 Switch          GF_Bathroom_Fan                "Bathroom Fan"                    <fan_ceiling>      (GF_Bathroom, gFan)                ["Switchable"]   
-Number          GF_Bathroom_Temperature        "BathroomTemperature"            <temperature>      (GF_Bathroom, gTemperature)                         
+Number          GF_Bathroom_Temperature        "Bathroom Temperature"            <temperature>      (GF_Bathroom, gTemperature)                         
 Number          GF_Bathroom_Humidity           "Bathroom Humidity"               <humidity>         (GF_Bathroom, gHumidity)                            
 
 Switch          GF_Wardrobe_Light              "Dressing Room Light"                  <light>            (GF_Wardrobe, gLight)              ["Lighting"]     
@@ -69,7 +72,7 @@ Number          GF_Wardrobe_Temperature        "Dressing Room Temperature"      
 Switch          GF_LivingDining_Light          "Dining Room Light"                  <light>            (GF_LivingDining, gLight)          ["Lighting"]     
 Switch          GF_LivingDining_Motion         "Dining Room Motion Sensor"          <motion>           (GF_LivingDining, gMotion)                          
 Switch          GF_LivingDining_Fan            "Dining Room Fan"                    <fan_ceiling>      (GF_LivingDining, gFan)            ["Switchable"]   
-Number          GF_LivingDining_Temperature    "Dining Room Temperature [%.1f °C]"     <temperature>      (GF_LivingDining, gTemperature)                     {mqtt="<[mosquitto:GF/Living/Temp:state:default], >[mosquitto:GF/Living/Temp:command:*:default]"}
+Number          GF_LivingDining_Temperature    "Dining Room Temperature [%.1f °C]"     <temperature>      (GF_LivingDining, gTemperature)  ["CurrentTemperature"]                   {mqtt="<[mosquitto:GF/Living/Temp:state:default], >[mosquitto:GF/Living/Temp:command:*:default]"}
 
 Switch          GF_Office_Light                "Study Room Light"                  <light>            (GF_Office, gLight)                ["Lighting"]     
 Contact         GF_Office_Door                 "Study Room Door"                   <door>             (GF_Office, gDoor)                                  
@@ -96,7 +99,8 @@ Switch          GF_MasterBedroom_Motion        "Bedroom Motion Sensor"          
 Switch          GF_MasterBedroom_Power         "Bedroom Power Outlet"           <poweroutlet>      (GF_MasterBedroom, gPower)         ["Switchable"]   
 Switch          GF_MasterBedroom_Fan           "Bedroom Fan"                    <fan_ceiling>      (GF_MasterBedroom, gFan)           ["Switchable"]   
 Switch          GF_MasterBedroom_AirCon        "Bedroom Air Conditioner"        <snow>             (GF_MasterBedroom, gAirCon)        ["Switchable"]   
-Number          GF_MasterBedroom_Temperature   "Bedroom Temperature"            <temperature>      (GF_MasterBedroom, gTemperature)                    
+Number          GF_MasterBedroom_Temperature   "Bedroom Temperature [%.1f °C]"            <temperature>      (GF_MasterBedroom, gTemperature)    ["CurrentTemperature"]     {mqtt="<[mosquitto:GF/Bedroom/Temp:state:default], >[mosquitto:GF/Bedroom/Temp:command:*:default]"}                  
+Number          GF_MasterBedroom_Temperature_set   "Bedroom Temperature [%.1f °C]"        <temperature>      (GF_MasterBedroom, gTemperature)    ["TargetTemperature"]      {mqtt="<[mosquitto:GF/Bedroom/Temp:state:default], >[mosquitto:GF/Bedroom/Temp:command:*:default]"}                  
 
 Switch          GF_LaundryRoom_Power           "Laundry Power Outlet"           <poweroutlet>      (GF_LaundryRoom, gPower)           ["Switchable"]   
 Switch          FF_HomeCinema_Power            "Home theater Power Outlet"           <poweroutlet>      (FF_HomeCinema, gPower)            ["Switchable"]   
